@@ -66,12 +66,12 @@ regex      = [r'core\.\d+',
 The general process to replicate our results is:
 
 1. Generate structured parsed dataset using [loglizer](https://github.com/logpai/loglizer) with Drain parser into JSON format.
-2. Split the dataset into training and testing set and save as NPZ format, with 'x_train', 'y_train', 'x_test', 'y_test'.
-3. Generate selected log representations with corresponding codes within the 'logrep' folder, and generates representations and save as NPY or NPZ format.
-4. If the studied technique generates event-level representations, use the 'aggregation.py' in the 'logrep' folder to merge them into sequence-level for the models that demand sequence-level input.
-5. Load generated representations and corresponding labels, and run the models within the 'models' folder to get the results.
+2. Split the dataset into training and testing set and save as NPZ format, with `x_train`, `y_train`, `x_test`, `y_test`.
+3. Generate selected log representations with corresponding codes within the `logrep` folder, and generates representations and save as NPY or NPZ format.
+4. If the studied technique generates event-level representations, use the `aggregation.py` in the `logrep` folder to merge them into sequence-level for the models that demand sequence-level input.
+5. Load generated representations and corresponding labels, and run the models within the `models` folder to get the results.
 
-* Sample parsed data and splitted data are provided in 'samples' folder.
+* Sample parsed data and splitted data are provided in `samples` folder.
 
 
 ## Network details for CNN and LSTM
